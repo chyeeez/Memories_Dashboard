@@ -1,0 +1,43 @@
+/* 由上至下解析, 第一個看到的 css rule */
+p {
+    color: gray; /* 分數: 0,0,0,1 */
+  }
+  /* 由上至下解析, 以後面解析到的 css rule 為主 */
+  p {
+    color: blue; /* 分數: 0,0,0,1 */
+  }
+  /*因為有p所以權限比較高->顯示黃色*/
+  p.highlight {
+    color: yellow; /* 分數: 0,0,1,1 */
+  }
+  
+  .highlight {
+    color: green; /* 分數: 0,0,1,0 */
+  }
+  
+  #myText {
+    color: red; /* 分數: 0,1,0,0 */
+  }
+  
+  p#myText {
+    color: orange; /* 分數: 0,1,0,1 */
+  }
+  
+  p#myText.highlight {
+    color: purple; /* 分數: 0,1,1,1 */
+  }
+  
+  p#myText.highlight {
+    color: brown !important; /* 最高優先 */
+  }
+  
+  
+  .highlight-div {
+    color: black; /* 分數: 0,0,1,0 */
+  }
+  
+  /* 由上至下解析, 這是解析到的最後一個 css rule */
+  .highlight-div p {
+    color: pink;  
+  }
+  
