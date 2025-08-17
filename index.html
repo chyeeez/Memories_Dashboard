@@ -1,83 +1,59 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>活動報名表單</title>
-   <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memories Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>✨Memories Dashboard✨</h1>
+  <div class="dashboard">
+    <div class="section movies">
+      <h2>Movies🎥</h2>
+      <div class="input-box">
+        <input type="text" class="task-input" placeholder="輸入新願望">
+        <button class="add-btn" >新增</button>
+      </div>
+      <ul class="task-list"></ul>
+    </div>
+    <div class="section games">
+      <h2>Games🎮</h2>
+      <div class="input-box">
+        <input type="text" class="task-input" placeholder="輸入新願望">
+        <button class="add-btn">新增</button>
+      </div>
+      <ul class="task-list"></ul>
+    </div>
+    <div class="section animes">
+      <h2>Animes🧚‍♀️</h2>
+      <div class="input-box">
+        <input type="text" class="task-input" placeholder="輸入新願望">
+        <button class="add-btn">新增</button>
+      </div>
+      <ul class="task-list"></ul>
+    </div>
+    <div class="section series">
+      <h2>Series📺</h2>
+      <div class="input-box">
+        <input type="text" class="task-input" placeholder="輸入新願望">
+        <button class="add-btn">新增</button>
+      </div>
+      <ul class="task-list"></ul>
+    </div>
+    <div class="section travels">
+      <h2>Travels🎡</h2>
+      <div class="input-box">
+        <input type="text" class="task-input" placeholder="輸入新願望">
+        <button class="add-btn">新增</button>
+      </div>
+      <ul class="task-list"></ul>
+    </div>
 
-
-
-
-<!--CSS start-->
-    <p>Hello CSS!</p>
-<p style="color: red">Hello CSS!</p>
-<p class="highlight">Hello CSS!</p>
-<div class="highlight highlight-div">Hello CSS!</div>
-
-<div class="highlight highlight-div">
-  <p>行內元素</p>
-  <p>行內元素</p>
-  <p>行內元素</p>
-</div>
-
-<hr />
-
-<p id="myText" class="highlight">Hello CSS!</p>
-<!--CSS end-->
-
-
-  <header>
-    <h1>2025 夏日市集活動報名</h1>
-  </header>
-
-  <main>
-    <h1>This is heading 1</h1>
-    <h2>This is heading 2</h2>
-    <h3>This is heading 3</h3>
-    <h4>This is heading 4</h4>
-    <h5>This is heading 5</h5>
-    <h6>This is heading 6</h6>
-
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfZ87idmyihqVP5felWBTjC2CNMnjVyEYQg&s" alt="Girl in a jacket" 
-    width="100" height="125">
-    <br>
-
-     
-
-
-    <form id="signupForm">
-
-     <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmfZ87idmyihqVP5felWBTjC2CNMnjVyEYQg&s" target="_blank">
-        <img src="C:\Users\yuki9\OneDrive - 國立陽明交通大學\114-1網頁設計\images\images.jfif" width="200" height="250" alt="Local Image">
-     </a>
-     <br>
-
-     <input type="checkbox">布丁
-     <input type="checkbox">果凍
-     <input type="checkbox">蛋糕
-     <br>
     
-     <label for="name">姓名：</label>
-     <input type="text" id="name" name="name" required />
-     <br>
-     <label for="email">電子郵件：</label>
-     <input type="email" id="email" name="email" required />
-     <br>
-     <label for="phone">電話：</label>
-     <input type="tel" id="phone" name="phone" required />
-     <br>
-     <label for="message">備註：</label>
-     <!--textarea可以放可以讓使用者換行的文字框-->
-     <textarea id="message" name="message"></textarea>
-     <br>
-     <button type="submit">送出報名</button>
-    </form>
+    
+  </div>
 
-    <div id="successMessage" class="hidden">✅ 感謝您的報名！</div>
-  </main>
   <script src="script.js"></script>
 </body>
 </html>
-
-
