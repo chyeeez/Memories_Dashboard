@@ -92,8 +92,9 @@ body {
   background-image: url("https://i.pinimg.com/1200x/be/61/b8/be61b817cec655b28dc775f68f43a5bc.jpg");
   background-size: cover;       /* 讓圖片自動填滿整個頁面 */
   background-position: center;  /* 置中顯示 */
-  background-repeat: no-repeat; /* 不要重複鋪排 */
+  background-repeat: repeat; /* 不要重複鋪排 */
   height: 100vh; /* 讓背景圖片覆蓋整個視窗高度 */
+  background-size: auto; /* 讓背景圖片保持原始大小 */
 }
 
 .task-list {
