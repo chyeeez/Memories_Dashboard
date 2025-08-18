@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
         checkbox.addEventListener("change", () => {
           if (checkbox.checked && !note) {
-            const inputNote = prompt("請輸入心得：");
+            const inputNote = prompt("請輸入評分及心得：");
             if (inputNote) {
               const noteDiv = document.createElement("div");
               noteDiv.className = "note";
